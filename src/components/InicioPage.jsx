@@ -2,7 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const InicioPage = () => (
-  <section className="flex items-center justify-center bg-color1 p-6 min-h-screen overflow-hidden">
+  <section
+    id="inicio"
+    className="flex items-center  justify-center bg-color1 p-6 min-h-screen overflow-hidden "
+  >
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}

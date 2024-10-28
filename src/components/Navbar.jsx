@@ -33,8 +33,8 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="#noticias" className="cursor-pointer hover:underline">
-            Noticias
+          <a href="#servicios" className="cursor-pointer hover:underline">
+            Servicios
           </a>
         </li>
         <li>

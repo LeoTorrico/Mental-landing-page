@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const opcionesCita = [
   {
@@ -46,45 +47,85 @@ const opcionesCita = [
   },
 ];
 
-const AgendarCita = () => (
-  <section id="agendarCita" className="p-6 pt-16 bg-gray-50">
-    <div className="container mx-auto max-w-4xl">
-      <h2 className="text-2xl font-bold text-center text-color6">
-        Agendar Cita
-      </h2>
-      <p className="mt-4 text-center text-color5 max-w-2xl mx-auto">
-        Reserva tu cita y da el primer paso hacia tu bienestar. Elige la
-        modalidad que mejor se adapte a tus necesidades.
-      </p>
+const AgendarCita = () => {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-        {opcionesCita.map((opcion, index) => (
-          <a
-            key={index}
-            href={opcion.enlace}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block group"
-          >
-            <div className="bg-white p-8 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl border border-gray-100">
-              <div className="flex flex-col items-center text-center">
-                <div className="mb-4 transition-transform duration-300 group-hover:scale-110">
-                  {opcion.icono}
+  return (
+    <section id="agendarCita" className="p-6 pt-16 bg-gray-50">
+      <div className="container mx-auto max-w-4xl">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-2xl font-bold text-center text-color6"
+        >
+          Agendar Cita
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="mt-4 text-center text-color5 max-w-2xl mx-auto"
+        >
+          Reserva tu cita y da el primer paso hacia tu bienestar. Elige la
+          modalidad que mejor se adapte a tus necesidades.
+        </motion.p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          {opcionesCita.map((opcion, index) => (
+            <motion.a
+              key={index}
+              href={opcion.enlace}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <motion.div
+                className="bg-white p-8 rounded-lg shadow-md transition-all duration-300 transform border border-gray-100"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <div className="flex flex-col items-center text-center">
+                  <motion.div
+                    className="mb-4"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {opcion.icono}
+                  </motion.div>
+                  <h3 className="text-xl font-semibold text-color5 mb-2">
+                    {opcion.tipo}
+                  </h3>
+                  <p className="text-gray-600 mb-6">{opcion.descripcion}</p>
+                  <motion.button
+                    className="bg-color6 text-white px-6 py-2 rounded-full hover:bg-color8 transition-colors duration-300"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Agendar ahora
+                  </motion.button>
                 </div>
-                <h3 className="text-xl font-semibold text-color5 mb-2">
-                  {opcion.tipo}
-                </h3>
-                <p className="text-gray-600 mb-6">{opcion.descripcion}</p>
-                <button className="bg-color6 text-white px-6 py-2 rounded-full hover:bg-color8 transition-colors duration-300">
-                  Agendar ahora
-                </button>
-              </div>
-            </div>
-          </a>
-        ))}
+              </motion.div>
+            </motion.a>
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default AgendarCita;

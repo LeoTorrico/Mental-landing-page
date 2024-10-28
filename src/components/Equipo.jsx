@@ -51,7 +51,7 @@ const Equipo = () => {
 
   return (
     <section
-      id="team"
+      id="equipo"
       className="py-12 bg-color3 flex flex-col items-center md:flex-row md:justify-center px-8 md:px-16 gap-8"
     >
       <motion.div

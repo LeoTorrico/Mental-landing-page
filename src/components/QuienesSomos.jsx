@@ -34,7 +34,7 @@ const QuienesSomos = () => {
 
   return (
     <section
-      id="team"
+      id="quienesSomos"
       className="py-12 bg-color3 flex flex-col md:flex-row items-center md:items-start px-8 md:px-16 gap-8"
     >
       <motion.div
