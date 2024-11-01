@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { useNavigate } from "react-router-dom";
 const QuienesSomos = () => {
+  const navigate = useNavigate();
   const fadeIn = {
     initial: {
       opacity: 0,
@@ -62,17 +63,18 @@ const QuienesSomos = () => {
           Atención integral
         </h3>
         <p className="text-color5 mt-4 leading-relaxed">
-          Somos una consultora especializada en salud mental en Bolivia,
-          conformada por profesionales en psiquiatría y terapias
-          cognitivo-conductuales. Nos dedicamos a brindar atención integral,
-          enfocada en el bienestar emocional y mental de cada persona. Creemos
-          en un enfoque bio-psicosocial y en la importancia de crear un ambiente
-          seguro y acogedor.
+          Somos un equipo de especialistas en la salud mental, conformada por
+          profesionales en psiquiatría y terapias cognitivo-conductuales. Nos
+          dedicamos a brindar atención integral, enfocada en el bienestar
+          emocional y mental de cada persona. Creemos en un enfoque
+          bio-psicosocial y en la importancia de crear un ambiente seguro y
+          acogedor.
         </p>
         <motion.button
           className="mt-6 bg-color6 text-color1 px-6 py-3 rounded-full"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => navigate("/sobre-nosotros")}
         >
           Sobre nosotros
         </motion.button>

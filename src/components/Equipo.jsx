@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { useNavigate } from "react-router-dom";
 const Equipo = () => {
-  // Variantes para la animación de la imagen
+  const navigate = useNavigate();
   const imageVariants = {
     hidden: {
       scale: 0.8,
@@ -115,6 +115,7 @@ const Equipo = () => {
             boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
           }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => navigate("/conoceme-mas")}
         >
           Conoceme más
         </motion.button>

@@ -80,7 +80,7 @@ const Servicios = () => {
   };
 
   return (
-    <section id="servicios" className="p-6 pt-16 bg-color1">
+    <section id="Servicios" className="p-6 pt-16 bg-color1">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -91,8 +91,8 @@ const Servicios = () => {
           Servicios & Tratamientos
         </h2>
         <p className="text-center text-gray-600 mt-2">
-          Psiquiatra especializado en terapias de salud mental y tratamientos
-          médicos personalizados.
+          Psiquiatras especializados en el tratamiento medico y terapéutico de
+          los distintos problemas mentales
         </p>
       </motion.div>
 
