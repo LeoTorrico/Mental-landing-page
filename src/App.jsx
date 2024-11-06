@@ -8,6 +8,7 @@ import AgendarCita from "./pages/AgendarCita";
 import ConocemeMas from "./pages/ConocemeMas";
 import PageServicios from "./pages/PageServicios";
 import ScrollToTop from "./ScrollToTop";
+import BlogAdmin from "./BlogAdmin";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/agendar-cita" element={<AgendarCita />} />
           <Route path="/conoceme-mas" element={<ConocemeMas />} />
           <Route path="/servicios" element={<PageServicios />} />
+          <Route path="/admin" element={<BlogAdmin />} />
         </Routes>
         <Footer />
       </div>

@@ -25,15 +25,6 @@ const InicioPage = () => {
         transition={{ duration: 0.8 }}
         className="text-center max-w-xl p-4 mt-10"
       >
-        <motion.h2
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-color6 font-semibold text-lg"
-        >
-          Atención PRESENCIAL y VIRTUAL
-        </motion.h2>
-
         <motion.div
           variants={logoVariants}
           className="flex justify-center mb-16"

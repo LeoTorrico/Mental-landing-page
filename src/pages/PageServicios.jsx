@@ -3,62 +3,64 @@ import { motion } from "framer-motion";
 
 const servicios = [
   {
-    titulo: "Terapia Cognitivo-Conductual",
+    titulo: "Atención Médico-Psiquiatra",
     descripcion:
-      "Identificar y cambiar patrones de pensamiento que afectan el comportamiento.",
+      "Consulta especializada para diagnóstico y tratamiento psiquiátrico.",
     descripcionDetallada:
-      "La Terapia Cognitivo-Conductual (TCC) es un enfoque terapéutico basado en evidencia que ayuda a identificar y modificar patrones de pensamiento negativos. Trabajamos juntos para desarrollar estrategias prácticas que mejoren tu bienestar emocional.",
+      "La atención médico-psiquiátrica brinda un diagnóstico profesional y un plan de tratamiento adecuado para los trastornos mentales y emocionales. Nos enfocamos en proveer un tratamiento basado en evidencia para mejorar la salud mental de nuestros pacientes.",
     beneficios: [
-      "Reducción de síntomas de ansiedad y depresión",
-      "Mejora en la resolución de problemas",
-      "Desarrollo de habilidades de afrontamiento",
-      "Mayor autoconciencia y control emocional",
+      "Diagnóstico preciso y profesional",
+      "Plan de tratamiento personalizado",
+      "Apoyo psiquiátrico continuo",
+      "Mejora significativa en la salud mental",
     ],
     imagen: "/img1.svg",
+    duracion: "Sesiones según necesidad del paciente",
+  },
+  {
+    titulo: "Terapias Individuales",
+    descripcion:
+      "Sesiones personalizadas enfocadas en el bienestar emocional y mental.",
+    descripcionDetallada:
+      "Las terapias individuales son espacios seguros donde los pacientes pueden explorar sus emociones, pensamientos y comportamientos. Ayudamos a nuestros pacientes a entenderse mejor y a desarrollar habilidades para enfrentar desafíos.",
+    beneficios: [
+      "Atención personalizada",
+      "Desarrollo de habilidades emocionales",
+      "Mayor autoconciencia",
+      "Estrategias para enfrentar problemas personales",
+    ],
+    imagen: "/img5.svg",
     duracion: "8-12 sesiones",
   },
   {
-    titulo: "Terapia Dialéctica-Conductual",
-    descripcion: "Regulación emocional y habilidades de afrontamiento.",
-    descripcionDetallada:
-      "La Terapia Dialéctica-Conductual (TDC) combina estrategias de cambio conductual con principios de aceptación y mindfulness. Esta terapia es especialmente efectiva para personas que experimentan emociones intensas.",
-    beneficios: [
-      "Mejor regulación emocional",
-      "Desarrollo de habilidades de mindfulness",
-      "Mejora en relaciones interpersonales",
-      "Mayor tolerancia al estrés",
-    ],
-    imagen: "/img2.svg",
-    duracion: "6 meses - 1 año",
-  },
-  {
-    titulo: "Tratamiento para Trastornos del Ánimo",
+    titulo: "Terapias Grupales",
     descripcion:
-      "Diagnóstico y manejo de trastornos como depresión y trastorno bipolar.",
+      "Espacios para compartir y superar juntos situaciones difíciles.",
     descripcionDetallada:
-      "Ofrecemos un enfoque integral para el tratamiento de trastornos del ánimo, combinando terapia y, cuando es necesario, manejo farmacológico. Nuestro objetivo es ayudarte a recuperar tu estabilidad emocional y calidad de vida.",
+      "Las terapias grupales ofrecen un ambiente de apoyo y comprensión. En estos espacios, los participantes pueden compartir experiencias y aprender de los demás, ayudando a construir una red de apoyo emocional.",
     beneficios: [
-      "Evaluación psiquiátrica completa",
-      "Plan de tratamiento personalizado",
-      "Seguimiento regular del progreso",
-      "Estrategias de prevención de recaídas",
-    ],
-    imagen: "/img3.svg",
-    duracion: "Tratamiento continuo",
-  },
-  {
-    titulo: "Manejo de Desregulación Emocional",
-    descripcion: "Técnicas para mejorar la regulación emocional.",
-    descripcionDetallada:
-      "Aprende a manejar emociones intensas y desarrolla habilidades para mantener el equilibrio emocional. Utilizamos técnicas probadas que te ayudarán a responder de manera más adaptativa a situaciones desafiantes.",
-    beneficios: [
-      "Control de impulsos mejorado",
-      "Técnicas de autorregulación",
-      "Manejo efectivo del estrés",
-      "Mejora en relaciones personales",
+      "Apoyo de otros en situaciones similares",
+      "Desarrollo de habilidades sociales",
+      "Reducción del aislamiento",
+      "Fomento de la empatía y la comprensión",
     ],
     imagen: "/img4.svg",
-    duracion: "12-16 sesiones",
+    duracion: "4-6 sesiones grupales",
+  },
+  {
+    titulo: "Talleres de Cuidados Mentales",
+    descripcion:
+      "Actividades para aprender técnicas de autocuidado y manejo emocional.",
+    descripcionDetallada:
+      "En estos talleres, los participantes adquieren herramientas y técnicas para cuidar su salud mental en el día a día. Exploramos temas como la gestión del estrés, la autorregulación emocional y el bienestar general.",
+    beneficios: [
+      "Aprendizaje de técnicas de autocuidado",
+      "Manejo del estrés y la ansiedad",
+      "Fortalecimiento de la resiliencia emocional",
+      "Fomento de un estilo de vida saludable",
+    ],
+    imagen: "/img3.svg",
+    duracion: "1-2 sesiones de taller",
   },
   {
     titulo: "Terapia para Ansiedad",
@@ -72,7 +74,7 @@ const servicios = [
       "Herramientas para manejar preocupaciones",
       "Estrategias para prevenir ataques de pánico",
     ],
-    imagen: "/img5.svg",
+    imagen: "/img2.svg",
     duracion: "8-12 sesiones",
   },
   {
